@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .text-md{
-  font-size: 1.07em;
+  font-size: 1.08em;
 }
 .bg-search{
   background-color: rgb(238, 238, 238);
@@ -173,5 +173,116 @@ align-items: center;
 
 .ht:hover{
   text-decoration: underline;
+}
+.bg-mg-1{
+  background-image: url('./imgs/ph1.avif');
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.bg-mg-2{
+  background-image: url('./imgs/ph2.webp');
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.bg-mg-3{
+  background-image: url('./imgs/ph3.avif');
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.bg-orng{
+  background-color: rgb(204, 76, 0);
+}
+.text-orng{
+  color: rgb(204, 76, 0);
+}
+.new{
+  font-size: smaller;
+  border-radius: 0px;
+  padding: 4px 10px;
+  margin: 30px 10px;
+  
+}
+
+.ertefa{
+  min-height: 800px;
+}
+.zoom-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-size 0.5s ease;
+}
+
+.zoom-bg:hover {
+  background-size: 110%;
+}
+.zoomed-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  transition: background-size 0.5s ease;
+}
+.zoomed-bg:hover {
+  background-size: 145%;
+}
+.zoom-bg:hover .ppa{
+  text-decoration: underline;
+}
+.zoomed-bg:hover .ppa{
+  text-decoration: underline;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* پنهان کردن انیمیشن پیش‌فرض */
+.arrow {
+  display: inline-block;
+}
+
+/* وقتی .card هاور بشه، انیمیشن اجرا بشه روی .arrow */
+.zoom-bg:hover .arrow {
+  animation: fly-around 0.6s ease;
+}
+.zoomed-bg:hover .arrow {
+  animation: fly-around 0.6s ease;
+}
+
+/* انیمیشن رفت و برگشت */
+@keyframes fly-around {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  51% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.py-2-5{
+  padding: 13px 0;
 }
 

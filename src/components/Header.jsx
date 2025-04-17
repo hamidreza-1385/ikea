@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <>
       {/* part1 */}
-      <div className="text-md top-bar">
+      <div className="text-md top-bar py-2-5">
         <section className='ht'><FontAwesomeIcon className="px-3" icon={faGlobe} />GB | English</section>
         <section className='ht'><FontAwesomeIcon className="px-3" icon={faPencil}/>Assembly via Taskrabit</section>
         <section className='ht'><FontAwesomeIcon className="px-3" icon={faTruck}/>SW1A2DD <FontAwesomeIcon className="px-3" icon={faBuilding}/>Hammersmith</section>
