@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import '../../src/index.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faPencil, faTruck, faBuilding, faUser, faHeart, faCartShopping , faArrowRight} from '@fortawesome/free-solid-svg-icons';
-
+import {faDotCircle, faGlobe, faPencil, faTruck, faBuilding, faUser, faHeart, faCartShopping , faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import chiz from '../imgs/chiz.png'
 
 
 const Home = () => {
@@ -10,17 +10,18 @@ const Home = () => {
       <div className="">
         <Header />
   
-        <h1 className="mb-5 fw-bold text-uppercase px-5">Welcome to IKEA UK!</h1>
+        <h1 className="mb-5 fw-bold  px-5 py-4">Welcome to IKEA UK !</h1>
   
-        <div className="row g-3 ertefa justify-content-center text-white">
+        <div className="row g-3 ertefa justify-content-center text-white ">
           {/* Coffee Table Card */}
           <div className="col-md-6">
-            <div className="p-4 bg-mg-1 shadow-sm h-100 zoom-bg">
+            <div className="clmn p-4 bg-mg-1 shadow-sm h-100 zoom-bg">
+              <div className="mx-5"><img className="img-fluid w-ss" src={chiz}></img></div>
+              <span className="text-size m-5 p-4 mt-0 "><FontAwesomeIcon icon={faDotCircle}/></span>
               <span className=" bg-orng text-white mb-2 new">New</span>
               <h4 className="fw-bold ppa mt-3">STOCKHOLM 2025</h4>
-              <p className="text-muted mb-1 ppa">Coffee table</p>
-              <p className="fw-semibold fs-5 ppa">£229</p>
-              <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>
+              
+              <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>
             </div>
           </div>
   
@@ -30,28 +31,28 @@ const Home = () => {
   
               {/* Orange Feature Block */}
               <div className="col-6 ">
-                <div className="p-4 bg-orng text-white shadow-sm h-100 zoom-bg ">
+                <div className="p-4 bg-orng text-white shadow-sm h-100 zoom-bg clmnn">
                   <h2 className="fw-bold mb-0 ppa">STOCKHOLM</h2>
                   <h3 className="fw-light">2025</h3>
                   <p className="mt-2 ppa">Quality without compromise.</p>
-                  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover bg-white text-orng rounded-5"><FontAwesomeIcon className="arrow text-orng" icon={faArrowRight}/></button>                </div>
+                  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover bg-white text-orng rounded-5 w-20 "><FontAwesomeIcon className="arrow text-orng" icon={faArrowRight}/></button>                </div>
               </div>
   
               {/* Minimalist Room Card */}
               <div className="col-md-6">
-                <div className="p-4 bg-mg-2 shadow-sm h-100 zoomed-bg ">
+                <div className="p-4 bg-mg-2 shadow-sm h-100 zoomed-bg clmn ">
                   <span className=" bg-orng text-white mb-2 new">New</span>
                   <h5 className="fw-semibold ppa mt-3">More than minimalism</h5>
                   <p className="text-muted ppa">For your living room</p>
-                  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>                </div>
+                  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>                </div>
               </div>
   
               {/* Tableware Card */}
               <div className="col-md-12">
-                <div className="p-4 bg-mg-3 shadow-sm h-100 zoom-bg">
+                <div className="p-4 bg-mg-3 shadow-sm h-100 zoom-bg clmn">
                   <span className=" bg-orng text-white mb-2 new">New</span>
                   <p className="fw-semibold ppa mt-3">A selection of tableware to make every meal special</p>
-                  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>                </div>
+                  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>                </div>
               </div>
   
             </div>

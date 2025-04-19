@@ -29,7 +29,7 @@ const SearchBox = () => {
     <div className="search-container" ref={boxRef}>
       {/* 🔍 باکس سرچ اصلی */}
       <div
-        className="d-flex justify-content-between bg-search w-100 py-2 px-4 mx-5 rounded-5 border search-input-box"
+        className="search-h d-flex justify-content-between bg-search w-100 py-2 px-4 mx-5 rounded-5 border-0 search-input-box"
         onClick={() => setShowPopup(true)}
       >
         <div className="d-flex align-items-center flex-grow-1">
@@ -41,9 +41,9 @@ const SearchBox = () => {
 
       {/* 📩 پاپ‌آپ زیر سرچ */}
       {showPopup && (
-        <div className="search-popup bg-white shadow rounded mtt p-3 ll z-200">
+        <div className="search-popup bg-white shadow rounded mtt p-3 ll">
           
-          <div className="d-flex justify-content-between text-muted mb-2">
+          <div className="d-flex justify-content-between text-muted mb-2" tabIndex={-1}>
             <FontAwesomeIcon icon={faSearch} className="me-2 text-secondary mx-2" />
             <input className='w-100 mx-3 m-i-s border-0 bbb' value={value} onChange={(e) => setValue(e.target.value)} placeholder='What are you looking for?'/>
             <small onClick={handleClear} className="text-primary" style={{ cursor: 'pointer' }}>Clear</small>
@@ -51,10 +51,10 @@ const SearchBox = () => {
           </div>
           {history.map((item, index) => (
             <div className="d-flex align-items-center mb-2" key={index}>
-              <img src="/imgs/dasmal.png" alt="" width="40" className="me-2" />
+              <img src="/imgs/dasmal.png" alt="" width="40" className="me-2 mb-3" />
               <div>
-                <div className="fw-bold">{item}</div>
-                <div className="text-muted small">plant mover</div>
+                
+                
               </div>
             </div>
           ))}
@@ -68,6 +68,6 @@ export default SearchBox;
 
 
 
-
+//
 
 
