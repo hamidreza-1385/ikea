@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ikea/static/css/main.e87105c4.css",
+    "main.js": "/ikea/static/js/main.81f99645.js",
+    "static/media/ph1.avif": "/ikea/static/media/ph1.e39a3b633c23cb2cc4ca.avif",
+    "static/media/ph2.webp": "/ikea/static/media/ph2.bb44a0bb23e96dd5d4af.webp",
+    "static/media/ph3.avif": "/ikea/static/media/ph3.080eafa61483c45494cb.avif",
+    "static/media/living.png": "/ikea/static/media/living.d7c6fccd7e8fe19da83f.png",
+    "static/media/bedroom.png": "/ikea/static/media/bedroom.d52b222253b7e7ad7b35.png",
+    "static/media/pop-1.png": "/ikea/static/media/pop-1.78d9a6860db60ed5e44c.png",
+    "static/media/kitchen.png": "/ikea/static/media/kitchen.e2988f1a7fa60e500f71.png",
+    "static/media/storage.png": "/ikea/static/media/storage.93b8d0d1292333190f9b.png",
+    "index.html": "/ikea/index.html",
+    "main.e87105c4.css.map": "/ikea/static/css/main.e87105c4.css.map",
+    "main.81f99645.js.map": "/ikea/static/js/main.81f99645.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e87105c4.css",
+    "static/js/main.81f99645.js"
+  ]
+}
