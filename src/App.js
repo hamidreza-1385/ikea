@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/ikea'>
       <Routes>
         <Route path='/' element={<Home/>}/>
       </Routes>
