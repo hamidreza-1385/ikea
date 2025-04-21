@@ -10,7 +10,7 @@ const Home = () => {
       <div className="">
         <Header />
   
-        <h1 className="mb-5 fw-bold  px-5 py-4">Welcome to IKEA UK !</h1>
+        <h1 className="mb-5 fw-bold  px-md-5 px-3 py-md-4 py-2">Welcome to IKEA UK !</h1>
   
         <div className="row g-3 ertefa justify-content-center text-white ">
           {/* Coffee Table Card */}
@@ -39,11 +39,11 @@ const Home = () => {
               </div>
   
               {/* Minimalist Room Card */}
-              <div className="col-md-6">
+              <div className="col-6">
                 <div className="p-4 bg-mg-2 shadow-sm h-100 zoomed-bg clmn ">
                   <span className=" bg-orng text-white mb-2 new">New</span>
-                  <h5 className="fw-semibold ppa mt-3">More than minimalism</h5>
-                  <p className="text-muted ppa">For your living room</p>
+                  <h5 className="fw-semibold ppa mt-md-3 text-dark">More than minimalism</h5>
+                  <p className="text-white ppa">For your living room</p>
                   <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>                </div>
               </div>
   

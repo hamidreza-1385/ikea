@@ -31,7 +31,7 @@ const CategoryPop = () => {
 
       {/* Category Items */}
       {activeTab && (
-        <div className="category-slider-container my-3 category-tabs z-500">
+        <div className="category-slider-container my-3 category-tabs z-500 ">
           <div className="category-slider">
             {categoryData[activeTab].map((cat, idx) => (
               <div className="category-item mx-3 my-3" key={idx}>

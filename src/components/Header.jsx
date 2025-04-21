@@ -9,6 +9,7 @@ import CategorySection from './CategorySection';
 import '../../src/index.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import CategoryPop from './CategoryPop';
+import { Link } from 'react-router-dom';
 
 
 
@@ -69,9 +70,14 @@ const Header = () => {
         </div>
       </div>
 {/*  */}
-      <div className='lower-header d-lg-none d-flex justify-content-center align-items-center m-r '><SearchBox /></div>
+      <div className='lower-header d-lg-none d-flex justify-content-center align-items-center m-r pb-4'><SearchBox /></div>
       {/* part3 */}
       <div className='d-none d-md-block'><CategorySection/></div>
+
+
+
+
+
       {/* baaz sho rast bala hamm */}
       <div
         className="offcanvas offcanvas-end roundedd-l "
@@ -150,7 +156,7 @@ const Header = () => {
           ></button>
         </div>
         <div className="offcanvas-body">
-          <section className='d-flex justify-content-between my-5'><h2 className='fw-bold'>Hey!</h2> <button className='text-white py-3 px-5 mx-1 rounded-5 fw-bold bg-dark '>Log in</button></section>
+          <section className='d-flex justify-content-between my-5'><h2 className='fw-bold'>Hey!</h2> <Link to={'/log'}><button className='text-white py-3 px-5 mx-1 rounded-5 fw-bold bg-dark '>Log in</button></Link></section>
           <img className='w-100 px-2' src={pop1}></img>
         </div>
         {/* part4 */}
