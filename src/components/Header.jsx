@@ -44,9 +44,9 @@ const Header = () => {
     <>
       {/* part1 */}
       <div className="text-md top-bar py-2-5">
-        <section className='ht px-3' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel2"><FontAwesomeIcon className="px-3" icon={faGlobe} />GB <span className='d-none d-lg-inline'>| English</span></section>
+        <section className='ht px-md-3 px-1' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel2"><FontAwesomeIcon className="px-3" icon={faGlobe} />GB <span className='d-none d-lg-inline'>| English</span></section>
         <section className='ht d-none d-md-inline'><FontAwesomeIcon className="px-3" icon={faPencil}/>Assembly via Taskrabit</section>
-        <section className='ht px-4' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel1">
+        <section className='ht px-md-4 px-2' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel1">
           <FontAwesomeIcon className="px-3" icon={faTruck}/>SW1A2DD 
           <FontAwesomeIcon className="px-3" icon={faBuilding}/>Hammersmith
         </section>     

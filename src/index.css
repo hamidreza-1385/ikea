@@ -377,9 +377,11 @@ background-repeat: no-repeat;
   border-bottom: 1px solid #868686;
 }
 .det{
-  color: #0067bc;
   display: block;
   padding: 5px 10px;
-  margin: 5px 20px;
-  background-color: #efefef;
+  margin: 5px 40px;
+ 
+}
+.mtat{
+  margin-top: 190px;
 }

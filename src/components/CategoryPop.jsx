@@ -11,7 +11,7 @@ const CategoryPop = () => {
   };
 
   return (
-    <div className=" category-section mx-5">
+    <div className=" category-section mx-2">
       {/* Tabs */}
       <div className="flex flex-col category-tab bord-b">
         {categoryTabs.map(tab => (
@@ -44,6 +44,7 @@ const CategoryPop = () => {
           </div>
         </div>
       )}
+      <div className='bg-light py-4  px-2 mtat'><span>Downlod and shop in the IKEA app</span></div>
     </div>
   );
 };

@@ -7,7 +7,6 @@ import bedroom from '../imgs/bedroom.png';
 import living from '../imgs/living.png';
 import kitchen from '../imgs/kitchen.png';
 import ombal from '../imgs/ombal.png'
-
 import livingroom from '../imgs/livingroom.png';
 
 export const categoryTabs = [
@@ -15,6 +14,8 @@ export const categoryTabs = [
     { key: 'shop-by-room', label: 'Shop by room',icon:faBullhorn },
     { key: 'now-at-ikea', label: 'Now at IKEA' },
     { key: 'offer', label: 'Offers and perks' },
+    { key: 'plan', label: 'plan, desine and inspiration' },
+    { key: 'service', label: 'services and support' }
   ];
   
   export const categoryData = {
@@ -89,6 +90,28 @@ export const categoryTabs = [
       { title: 'Bed room', img: bedroom },
       { title: 'Living room', img: living },
       { title: 'Kitchen', img: kitchen },
+    ],
+    'plan': [
+      { title: 'Bed room', img: bedroom },
+      { title: 'Living room', img: living },
+      { title: 'Kitchen', img: kitchen },
+      { title: 'Bed room', img: bedroom },
+      { title: 'Living room', img: living },
+      { title: 'Kitchen', img: kitchen },
+      { title: 'Bed room', img: bedroom },
+      { title: 'Living room', img: living },
+      
+    ],
+    'service': [
+      { title: 'Bed room', img: bedroom },
+      { title: 'Living room', img: living },
+      { title: 'Kitchen', img: kitchen },
+      { title: 'Bed room', img: bedroom },
+      { title: 'Living room', img: living },
+      { title: 'Kitchen', img: kitchen },
+      { title: 'Bed room', img: bedroom },
+      { title: 'Living room', img: living },
+      
     ],
   };
   
