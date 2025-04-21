@@ -370,3 +370,16 @@ background-repeat: no-repeat;
   padding: 6px 6px
   
 }
+.m-r{
+  margin-right: 78px;
+}
+.b-b{
+  border-bottom: 1px solid #868686;
+}
+.det{
+  color: #0067bc;
+  display: block;
+  padding: 5px 10px;
+  margin: 5px 20px;
+  background-color: #efefef;
+}

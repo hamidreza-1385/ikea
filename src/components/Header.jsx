@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faPencil, faTruck, faBuilding, faUser, faHeart, faCartShopping ,faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import {faBars, faGlobe, faPencil, faTruck, faBuilding, faUser, faHeart, faCartShopping ,faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import logo from '../imgs/logo.png';
 import pop1 from '../imgs/pop-1.png';
 import SearchBox from "./wiget/SearchBox";
@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CategorySection from './CategorySection';
 import '../../src/index.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import CategoryPop from './CategoryPop';
 
 
 
@@ -43,8 +44,8 @@ const Header = () => {
     <>
       {/* part1 */}
       <div className="text-md top-bar py-2-5">
-        <section className='ht px-3' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel2"><FontAwesomeIcon className="px-3" icon={faGlobe} />GB | English</section>
-        <section className='ht'><FontAwesomeIcon className="px-3" icon={faPencil}/>Assembly via Taskrabit</section>
+        <section className='ht px-3' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel2"><FontAwesomeIcon className="px-3" icon={faGlobe} />GB <span className='d-none d-lg-inline'>| English</span></section>
+        <section className='ht d-none d-md-inline'><FontAwesomeIcon className="px-3" icon={faPencil}/>Assembly via Taskrabit</section>
         <section className='ht px-4' role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel1">
           <FontAwesomeIcon className="px-3" icon={faTruck}/>SW1A2DD 
           <FontAwesomeIcon className="px-3" icon={faBuilding}/>Hammersmith
@@ -54,20 +55,23 @@ const Header = () => {
       <div
         className={`py-2 lower-header ${isFixed ? 'fixed' : 'static'} ${showLowerHeader ? 'visible' : 'hidden'}`}
       >
-        <div className="d-flex justify-content-between align-items-center px-5 py-3">
+        <div className="d-flex justify-content-between align-items-center px-md-5 px-3 py-3">
           <div className="d-flex col-6 align-items-center">
             <img src={logo} alt="logo" style={{ height: 40, marginRight: 20 }} />
-            <SearchBox />
+            <div className='d-none d-lg-inline'><SearchBox /></div>
           </div>
           <div className="d-flex">
-            <div className="px-4 ht log-h py-1 mx-2" role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel3"><FontAwesomeIcon icon={faUser}/> Hey!Login</div>
+            <div className="px-2 ht log-h py-1 mx-2" role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel3"><FontAwesomeIcon icon={faUser}/><span className='d-none d-md-inline px-2'>Hey!Login</span></div>
             <div className="px-2 mx-2 py-1 icon-h"><FontAwesomeIcon icon={faHeart}/></div>
             <div className="px-2 mx-2 py-1 icon-h"><FontAwesomeIcon icon={faCartShopping}/></div>
+            <div className="px-2 mx-2 py-1 icon-h d-inline d-md-none" role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel4"><FontAwesomeIcon icon={faBars}/></div>
           </div>
         </div>
       </div>
+{/*  */}
+      <div className='lower-header d-lg-none d-flex justify-content-center align-items-center m-r '><SearchBox /></div>
       {/* part3 */}
-      <CategorySection/>
+      <div className='d-none d-md-block'><CategorySection/></div>
       {/* baaz sho rast bala hamm */}
       <div
         className="offcanvas offcanvas-end roundedd-l "
@@ -149,8 +153,29 @@ const Header = () => {
           <section className='d-flex justify-content-between my-5'><h2 className='fw-bold'>Hey!</h2> <button className='text-white py-3 px-5 mx-1 rounded-5 fw-bold bg-dark '>Log in</button></section>
           <img className='w-100 px-2' src={pop1}></img>
         </div>
+        {/* part4 */}
       </div>
+      <div
+        className="offcanvas offcanvas-end roundedd-l"
+        tabIndex="-1"
+        id="addressPanel4"
+        aria-labelledby="addressPanelLabel"
+        style={{width:'480px', backgroundColor:'white'}}
 
+      >     
+        <div className="offcanvas-header justify-content-between p-4 b-b">
+          <img src={logo} alt="logo" style={{ height: 40, marginRight: 20 }} />
+          <button
+            type="button"
+            className="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="بستن"
+          ></button>
+        </div>
+        <div className="offcanvas-body">
+          <CategoryPop/>
+        </div>
+      </div>
     </>
   );
 };
