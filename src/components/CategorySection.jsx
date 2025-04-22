@@ -11,7 +11,6 @@ const CategorySection = () => {
       {/* Tabs */}
       <div className="category-tabs bord-b">
         {categoryTabs.map(tab => (
-          
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
@@ -22,7 +21,6 @@ const CategorySection = () => {
           </button>
         ))}
       </div>
-
       {/* Category Items */}
       <div className="category-slider-container my-3 category-tabs z-500">
         <div className="category-slider">
