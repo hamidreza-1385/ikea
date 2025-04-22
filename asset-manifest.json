@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/ikea/static/css/main.3da1d704.css",
-    "main.js": "/ikea/static/js/main.215073f9.js",
+    "main.js": "/ikea/static/js/main.6010ef8a.js",
     "static/media/log.png": "/ikea/static/media/log.1faf5ff9963ebac36dc9.png",
     "static/media/ph1.avif": "/ikea/static/media/ph1.e39a3b633c23cb2cc4ca.avif",
     "static/media/ph2.webp": "/ikea/static/media/ph2.bb44a0bb23e96dd5d4af.webp",
     "static/media/ph3.avif": "/ikea/static/media/ph3.080eafa61483c45494cb.avif",
     "static/media/bootstrap-icons.woff?": "/ikea/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/s23.png": "/ikea/static/media/s23.0ecca6ae888104e1b15e.png",
+    "static/media/s22.png": "/ikea/static/media/s22.dda5972a8ef203f96f1c.png",
     "static/media/bootstrap-icons.woff2?": "/ikea/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/h.png": "/ikea/static/media/h.02d193c621951bc75059.png",
     "static/media/e.png": "/ikea/static/media/e.53e7517f864ecebebbde.png",
     "static/media/p.png": "/ikea/static/media/p.3a55a0b49f25db840af1.png",
+    "static/media/s21.png": "/ikea/static/media/s21.12ba2fd2929bdc3fbff4.png",
     "static/media/m.png": "/ikea/static/media/m.d19a467b0b27ef9f63fc.png",
     "static/media/living.png": "/ikea/static/media/living.d7c6fccd7e8fe19da83f.png",
     "static/media/bedroom.png": "/ikea/static/media/bedroom.d52b222253b7e7ad7b35.png",
@@ -20,10 +23,10 @@
     "static/media/storage.png": "/ikea/static/media/storage.93b8d0d1292333190f9b.png",
     "index.html": "/ikea/index.html",
     "main.3da1d704.css.map": "/ikea/static/css/main.3da1d704.css.map",
-    "main.215073f9.js.map": "/ikea/static/js/main.215073f9.js.map"
+    "main.6010ef8a.js.map": "/ikea/static/js/main.6010ef8a.js.map"
   },
   "entrypoints": [
     "static/css/main.3da1d704.css",
-    "static/js/main.215073f9.js"
+    "static/js/main.6010ef8a.js"
   ]
 }
