@@ -120,6 +120,12 @@ code {
   padding: 1rem 1.5rem;
 }
 
+.category-slider-containers {
+  
+  white-space: nowrap;
+  padding: 1rem 1.5rem;
+}
+
 .category-slider {
   display: flex;
   gap: 2rem;
@@ -546,3 +552,6 @@ body {
   }
 }
 /* //////////////////////////////////////////// */
+.img-mm{
+  width: 300px;
+}

@@ -10,6 +10,7 @@ import s32 from '../imgs/s32.png'
 import s34 from '../imgs/s34.png'
 import s36 from '../imgs/s36.png'
 import s31 from '../imgs/s31.png'
+import ProductList from "./ProductList";
 
 
 
@@ -83,14 +84,16 @@ const Home = () => {
         <div>
           <h2 className="px-5 pt-5">Today's best deals</h2>
           <div className="d-flex">
-          <div className="d-flex px-5 category-slider-container my-3 category-tabs col-md-9">
-              <section className=""><img src={s32}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>             </span></section>
-              <section className=""><img src={s34}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-              <section className=""><img src={s36}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-              <section className=""><img src={s21}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-              <section className=""><img src={s22}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-            </div>
-            <div className="col-md-3">
+          <div className="d-flex px-5 category-slider-containers my-3 col-md-9 col-12">
+              {/* <section className=""><img className=" img-mm" src={s32}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo             </span></section>
+              <section className=""><img className=" img-mm" src={s34}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo</span></section>
+              <section className=""><img className=" img-mm" src={s36}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo</span></section>
+              <section className=""><img className=" img-mm" src={s21}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo</span></section>
+              <section className=""><img className=" img-mm" src={s22}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo</span></section>
+           */}
+           <ProductList/>
+            </div> 
+            <div className="col-md-3 d-none d-md-block">
               <img className="img-fluid" src={s31}></img>
               <section className="bg-primary px-5 py-4 text-white">
                 <h3>IKEA Familly offers</h3>
