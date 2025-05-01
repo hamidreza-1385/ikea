@@ -17,7 +17,7 @@ const Cart = () => {
   return (
     <div>
       <Header/>
-      <div className='px-5 mx-5'>
+      <div className='px-md-5 mx-md-5 px-2 mx-2'>
       <h2 className="my-4">سبد خرید</h2>
       {cart.length === 0 ? (
         <p>سبد خرید شما خالی است</p>

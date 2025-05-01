@@ -553,5 +553,18 @@ body {
 }
 /* //////////////////////////////////////////// */
 .img-mm{
-  width: 300px;
+  width: 200px;
+}
+@media (min-width: 1000px) {
+  .img-mm{
+    width: 300px;}
+}
+.fs-9{
+  font-size: 12px;
+}
+.fs-8{
+  font-size: 14px;
+}
+.roundedd-6{
+  border-radius: 30px;
 }
