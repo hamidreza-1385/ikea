@@ -18,7 +18,7 @@ function ProductList() {
 
   return (
     <Container>
-    <div className="container d-flex category-slider-container  category-tabs">
+    <div className=" container d-flex category-slider-container  category-tabs">
     
       {products.map(product => (
         <Col className='flex mb-4' key={product.id} md={4}>

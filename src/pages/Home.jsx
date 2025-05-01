@@ -83,9 +83,9 @@ const Home = () => {
         </div>
         {/* ////////////////////////////// */}
         <div>
-          <h2 className="px-5 pt-5">Today's best deals</h2>
+          <h2 className=" px-3 px-md-5 pt-5">Today's best deals</h2>
           <div className="d-flex">
-          <div className="d-flex px-5 category-slider-containers my-3 col-md-9 col-12">
+          <div className="d-flex px-2 px-md-5 category-slider-containers my-3 col-md-9 col-12">
               {/* <section className=""><img className=" img-mm" src={s32}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo             </span></section>
               <section className=""><img className=" img-mm" src={s34}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo</span></section>
               <section className=""><img className=" img-mm" src={s36}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolo</span></section>
