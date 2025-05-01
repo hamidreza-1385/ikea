@@ -58,13 +58,13 @@ const Header = () => {
       >
         <div className="d-flex justify-content-between align-items-center px-md-5 px-3 py-3">
           <div className="d-flex col-6 align-items-center">
-            <img src={logo} alt="logo" style={{ height: 40, marginRight: 20 }} />
+            <Link to={'/'}><img src={logo} alt="logo" style={{ height: 40, marginRight: 20 }} /></Link>
             <div className='d-none d-lg-inline'><SearchBox /></div>
           </div>
           <div className="d-flex">
             <div className="px-2 ht log-h py-1 mx-2" role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel3"><FontAwesomeIcon icon={faUser}/><span className='d-none d-md-inline px-2'>Hey!Login</span></div>
             <div className="px-2 mx-2 py-1 icon-h"><FontAwesomeIcon icon={faHeart}/></div>
-            <div className="px-2 mx-2 py-1 icon-h"><FontAwesomeIcon icon={faCartShopping}/></div>
+            <Link className='custom-link' to="/cart"><div className="px-2 mx-2 py-1 icon-h"><FontAwesomeIcon icon={faCartShopping}/></div></Link>
             <div className="px-2 mx-2 py-1 icon-h d-inline d-md-none" role="button" data-bs-toggle="offcanvas" data-bs-target="#addressPanel4"><FontAwesomeIcon icon={faBars}/></div>
           </div>
         </div>
@@ -73,7 +73,6 @@ const Header = () => {
       <div className='lower-header d-lg-none d-flex justify-content-center align-items-center m-r pb-4'><SearchBox /></div>
       {/* part3 */}
       <div className='d-none d-md-block'><CategorySection/></div>
-
 
 
 

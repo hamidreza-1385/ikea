@@ -11,6 +11,7 @@ import s34 from '../imgs/s34.png'
 import s36 from '../imgs/s36.png'
 import s31 from '../imgs/s31.png'
 import ProductList from "./ProductList";
+import { Link } from "react-router-dom";
 
 
 
@@ -72,12 +73,12 @@ const Home = () => {
         <div className="sec-2 bg-light my-5">
           <h2 className="px-5 pt-5">Sale ends soon!</h2>
           <div className="d-flex px-5 category-slider-container my-3 category-tabs">
-            <section className="bg-danger col-md-2 col-8 px-4 py-5 text-white fs-6 fw-bold zoomed-bg clmnn mb-5">  <p>Lorem, ipsum dolor</p><p>sit amet consectetur </p><p>elit. Mollitia, eos.</p>  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover bg-white text-orng rounded-5 w-20 "><FontAwesomeIcon className="arrow text-orng" icon={faArrowRight}/></button></section>
-            <section className=""><img src={s21}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>             </span></section>
-            <section className=""><img src={s22}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-            <section className=""><img src={s23}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-            <section className=""><img src={s21}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
-            <section className=""><img src={s22}></img><span className="justify-content-between d-flex mb-5 fw-bold">Lorem, ipsum dolor.                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
+            <section className="bg-danger col-md-2 col-8 px-4 py-5 text-white fs-6 fw-bold zoomed-bg clmnn mb-5">  <p className="ppa">Lorem, ipsum dolor</p><p>sit amet consectetur </p><p>elit. Mollitia, eos.</p>  <button className="btn btn-link text-decoration-none text-white fs-4 btn-hover bg-white text-orng rounded-5 w-20 "><FontAwesomeIcon className="arrow text-orng" icon={faArrowRight}/></button></section>
+            <section className="zoom-bg"><img src={s21}></img><span className="justify-content-between d-flex mb-5 fw-bold"><p className="ppa">Lorem, ipsum dolor. </p>                 <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>             </span></section>
+            <section className="zoom-bg"><img src={s22}></img><span className="justify-content-between d-flex mb-5 fw-bold"><p className="ppa">Lorem, ipsum dolor. </p>                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
+            <section className="zoom-bg"><img src={s23}></img><span className="justify-content-between d-flex mb-5 fw-bold"><p className="ppa">Lorem, ipsum dolor. </p>                   <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
+            <section className="zoom-bg"><img src={s21}></img><span className="justify-content-between d-flex mb-5 fw-bold"><p className="ppa">Lorem, ipsum dolor. </p>                  <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
+            <section className="zoom-bg"><img src={s22}></img><span className="justify-content-between d-flex mb-5 fw-bold"><p className="ppa">Lorem, ipsum dolor. </p>                   <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button></span></section>
           </div>
         </div>
         {/* ////////////////////////////// */}
@@ -98,7 +99,7 @@ const Home = () => {
               <section className="bg-primary px-5 py-4 text-white">
                 <h3>IKEA Familly offers</h3>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus doloribus sit velit facere consequatur illo quidem corporis suscipit voluptatem.</span>
-                <button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start bg-white rounded-5 d-block my-3"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>
+                <Link to={'/productlist'}></Link><button className="btn btn-link text-decoration-none text-dark fs-4 btn-hover text-start bg-white rounded-5 d-block my-3"><FontAwesomeIcon className="arrow" icon={faArrowRight}/></button>
               </section>
             </div>
         </div>

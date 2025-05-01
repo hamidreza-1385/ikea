@@ -13,16 +13,22 @@ import ListVazayef from './pages/dashboard/ListVazayef';
 import Poshtibani from './pages/dashboard/Poshtibani';
 import Didgah from './pages/dashboard/Didgah';
 import { TaskProvider } from './data/dashbord/TaskContext';
+import ProductList from './pages/ProductList';
+import Cart from './pages/Cart';
+import { CartProvider } from './context/CartContext';
 
 
 
 
 function App() {
   return (
+    <CartProvider>
     <Router basename='/ikea'>
       <TaskProvider>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/productlist' element={<ProductList/>}/>
         <Route path='/log' element={<Login/>}></Route>
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/eshterak' element={<Eshterak/>}></Route>
@@ -35,6 +41,7 @@ function App() {
       </Routes>
       </TaskProvider>
     </Router>
+    </CartProvider>
   );
 }
 
